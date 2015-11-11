@@ -7,14 +7,23 @@ update:
   serial: false
 
 jobs:
-  - name: postgres-smoke-tests
+  - name: smoke-tests
+    lifecycle: errand
     templates:
-    - name: postgres-smoke-tests
+    - name: smoke-tests
       release: postgres-smoke-tests
     instances: 0
     resource_pool: small_z1
-    persistent_disk: 0
     update:
       canaries: 10
     properties:
-      postgres-smoke-tests:
+      cf:
+        api_url: (( merge ))
+        apps_domain: (( merge ))
+        admin_username: admin
+        admin_password: admin
+      psql:
+        service_name: postgres
+        plan_names: '["shared", "shared-nr"]'
+      preferences:
+        num_insertions: 4

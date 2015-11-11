@@ -4,7 +4,7 @@
   "admin_user":     "<%= p('cf.admin_username') %>",
   "admin_password": "<%= p('cf.admin_password') %>",
   "service_name":   "<%= p('psql.service_name') %>",
-  "plan_names":     <%= p('psql.plan_names') %>",
+  "plan_names":     <%= p('psql.plan_names') %>,
   "skip_ssl_validation": true,
   "create_permissive_security_group": true
 }

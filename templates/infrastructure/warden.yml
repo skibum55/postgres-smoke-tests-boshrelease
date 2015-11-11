@@ -19,7 +19,9 @@ jobs:
       - name: postgres-smoke-tests
         static_ips: ~
     properties:
-      postgres-smoke-tests:
+      cf:
+        api_url: https://api.bosh-lite.com
+        apps_domain: bosh-lite.com
 
 compilation:
   cloud_properties:
