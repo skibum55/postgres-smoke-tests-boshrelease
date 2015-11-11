@@ -1,0 +1,5 @@
+check process smoke-tests
+  with pidfile /var/vcap/sys/run/smoke-tests/smoke-tests.pid
+  start program "/var/vcap/jobs/smoke-tests/bin/control start" with timeout 30 seconds
+  stop program "/var/vcap/jobs/smoke-tests/bin/control stop"
+  group vcap

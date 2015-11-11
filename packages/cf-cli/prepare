@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# remove this line once you update the package
+echo -e >&2 "\n!!! You forgot to update the cf-cli prepare script (packages/cf-cli/prepare)...\n" ; exit 1
+
+package="cf-cli"
+version="6.12.4"
+file="${package}-${version}.tar.gz"
+url="https://cli.run.pivotal.io/stable?release=linux64-binary&version=${version}&source=github-rel"
+
+if [[ ! -s "${package}/${file}" ]]
+then
+  mkdir -p ${package}
+  curl -s "${url}" -o "${package}/${file}"
+fi

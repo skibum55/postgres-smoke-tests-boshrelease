@@ -1,0 +1,3 @@
+[submodule "src/postgres-smoke-tests"]
+	path = src/postgres-smoke-tests
+	url = git@github.com:starkandwayne/postgres-smoke-tests.git

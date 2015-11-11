@@ -1,0 +1,13 @@
+---
+name: smoke-tests
+packages:
+- smoke-tests
+templates:
+  bin/control: bin/control
+  bin/smoke-tests: bin/smoke-tests
+  shell/env: shell/env
+  shell/functions: shell/functions
+properties:
+  smoke_tests.debug:
+    description: "Enable debug output, can be 'true' or 'false' (default)."
+    default: "false"

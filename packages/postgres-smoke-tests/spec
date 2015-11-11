@@ -1,0 +1,7 @@
+---
+# this is a SOURCE package
+name: cf-rabbitmq-smoke-tests
+dependencies:
+  - go
+files:
+  - postgres-smoke-tests/**/*

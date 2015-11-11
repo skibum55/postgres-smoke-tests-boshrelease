@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -e
+
+package="go"
+version="1.0.0"
+file="${package}-${version}.tar.gz"
+
+tar zxvf ${package}/${file}
+
+cp -R go/* ${BOSH_INSTALL_TARGET}

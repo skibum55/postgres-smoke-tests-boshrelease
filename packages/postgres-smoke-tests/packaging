@@ -1,0 +1,15 @@
+#/usr/bin/env bash
+set -e
+
+LOCAL_PACKAGE="postgres-smoke-tests"
+GOLANG_PACKAGE="github.com/starkandwayne/postgres-smoke-tests"
+mkdir -p ${BOSH_INSTALL_TARGET}/src/${GOLANG_PACKAGE}
+cp -a ${LOCAL_PACKAGE}/* ${BOSH_INSTALL_TARGET}/src/${GOLANG_PACKAGE}
+cd ${BOSH_INSTALL_TARGET}/src/${GOLANG_PACKAGE}/vendor/github.com
+cp -r onsi ${BOSH_INSTALL_TARGET}/src/github.com
+
+export GOPATH=${BOSH_INSTALL_TARGET}
+export GOROOT=/var/vcap/packages/go
+export PATH=${GOROOT}/bin:${PATH}
+
+go install -v github.com/onsi/ginkgo/ginkgo
