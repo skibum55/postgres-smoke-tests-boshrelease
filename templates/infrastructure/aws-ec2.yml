@@ -7,8 +7,7 @@ meta:
     version: latest
 
 jobs:
-  - name: postgres-smoke-tests
-    instances: 2
+  - name: smoke-tests
     networks:
       - name: postgres-smoke-tests
     persistent_disk: (( grab meta.persistent_disk ))

@@ -12,7 +12,7 @@ jobs:
     templates:
     - name: smoke-tests
       release: postgres-smoke-tests
-    instances: 0
+    instances: 1
     resource_pool: small_z1
     update:
       canaries: 10

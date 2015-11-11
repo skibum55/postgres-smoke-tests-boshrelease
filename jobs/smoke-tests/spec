@@ -7,7 +7,6 @@ packages:
 templates:
   bin/run: bin/run
   config/smoke-tests.json: config/smoke-tests.json
-  shell/functions: shell/functions
 properties:
   cf.api_url:
     description: "Cloud Foundry API URL - e.g. https://api.bosh-lite.com"
@@ -21,7 +20,7 @@ properties:
   psql.service_name:
     description: "Name of exposed postgres service."
   psql.plan_names:
-    description: "A JSON array respresenting the list of Cloud Foundry plans to test for <psql.service_name>
+    description: "A JSON array respresenting the list of Cloud Foundry plans to test for <psql.service_name>"
 
   preferences.num_insertions:
     description: "The number of insertions to test per table created in the smoke tests. Lower is faster, higher is more thorough"

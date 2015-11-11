@@ -1,6 +1,6 @@
 ---
 # this is a SOURCE package
-name: cf-rabbitmq-smoke-tests
+name: postgres-smoke-tests
 dependencies:
   - go
 files:
