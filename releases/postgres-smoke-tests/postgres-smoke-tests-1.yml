@@ -1,0 +1,31 @@
+---
+packages:
+- name: cf-cli
+  version: ed5f8d86017a970a50ebc4f27437800314c64192
+  fingerprint: ed5f8d86017a970a50ebc4f27437800314c64192
+  sha1: 1e38eb0de0932212e2bd383f46b821e90eafe5da
+  dependencies: []
+- name: go
+  version: 098eeda69cdf4cd8159c6ef39df86d5736eb916c
+  fingerprint: 098eeda69cdf4cd8159c6ef39df86d5736eb916c
+  sha1: 49ab3a40b95cb7615c61b0d4145d62de8cca50fb
+  dependencies: []
+- name: postgres-smoke-tests
+  version: e1b96bcc3121cf62c57475023d64fa79d2d284a0
+  fingerprint: e1b96bcc3121cf62c57475023d64fa79d2d284a0
+  sha1: ada833034f538064b8e0d2df2ce9aa5fbf3b9d18
+  dependencies:
+  - go
+jobs:
+- name: smoke-tests
+  version: a3ab38456e65035322d611c6836ebb322c4a2f53
+  fingerprint: a3ab38456e65035322d611c6836ebb322c4a2f53
+  sha1: 2c92a76822cf6cce0023e9884801e3aaae4b6eb4
+license:
+  version: 6266e6d72460e0aaccda244014590b4b647434ef
+  fingerprint: 6266e6d72460e0aaccda244014590b4b647434ef
+  sha1: d132413c3d9042f4ae662f07430e23e651b4c07a
+commit_hash: f2fcd168
+uncommitted_changes: false
+name: postgres-smoke-tests
+version: '1'
