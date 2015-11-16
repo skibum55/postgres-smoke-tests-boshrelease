@@ -1,1 +1,9 @@
---- {}
+---
+cf-cli/cf-cli-6.13.0.tar.gz:
+  object_id: 8aa53ab2-fe1b-42a9-9c79-776a98860673
+  sha: 82c5774aa44af9d091d3461adfb61bdadd64aad3
+  size: 5486088
+go/go-1.5.1.tar.gz:
+  object_id: 75e093dd-41e3-492e-9885-4ab6285c9ef8
+  sha: 46eecd290d8803887dec718c691cc243f2175fe0
+  size: 77875767
