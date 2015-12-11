@@ -26,7 +26,7 @@ cd postgres-smoke-tests-boshrelease
 
 If you intend on using a final release upload it like so:
 ```sh
-bosh upload release releases/postgres-smoke-tests-1.yml
+bosh upload release releases/postgres-smoke-tests/postgres-smoke-tests-2.yml
 ```
 
 Next download your manifest file for the deployment targeted so we can edit it and add the release.
